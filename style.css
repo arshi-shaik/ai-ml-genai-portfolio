@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  background: #050816;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+header.hero {
+  min-height: 60vh;
+  padding: 1.5rem 8%;
+  background: radial-gradient(circle at top, #1e293b 0, #020617 55%);
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+}
+
+.hero-content {
+  margin-top: 5rem;
+  max-width: 480px;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-content p {
+  margin-bottom: 1.25rem;
+  color: #cbd5f5;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.btn.primary {
+  background: #6366f1;
+  color: white;
+}
+
+.btn.secondary {
+  border: 1px solid #6366f1;
+  color: #e5e7eb;
+}
+
+/* Ask my portfolio widget */
+.ask-widget {
+  position: absolute;
+  right: 8%;
+  bottom: 2rem;
+  width: 260px;
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 0.8rem;
+}
+
+.ask-header {
+  padding: 0.5rem 0.75rem;
+  background: #111827;
+  border-bottom: 1px solid #1f2937;
+}
+
+.ask-body {
+  padding: 0.5rem;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.msg {
+  margin-bottom: 0.35rem;
+  padding: 0.35rem 0.55rem;
+  border-radius: 6px;
+}
+
+.msg.bot {
+  background: #1f2937;
+}
+
+.msg.user {
+  background: #4b5563;
+  align-self: flex-end;
+}
+
+.ask-input {
+  display: flex;
+  border-top: 1px solid #1f2937;
+}
+
+.ask-input input {
+  flex: 1;
+  border: none;
+  padding: 0.35rem 0.5rem;
+  background: #020617;
+  color: #e5e7eb;
+  font-size: 0.8rem;
+}
+
+.ask-input button {
+  border: none;
+  padding: 0.35rem 0.7rem;
+  background: #6366f1;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 8%;
+}
+
+.section.alt {
+  background: #020617;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.project-card {
+  background: #020617;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid #1f2937;
+}
+
+.alt .project-card {
+  background: #050816;
+}
+
+.project-card h3 {
+  margin-bottom: 0.4rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+}
+
+.tech {
+  margin-top: 0.4rem;
+  color: #a5b4fc;
+  font-size: 0.85rem;
+}
+
+.project-links a {
+  margin-right: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.about-content {
+  max-width: 700px;
+}
+
+.skills-list {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.skills-list li {
+  margin-bottom: 0.4rem;
+}
+
+.contact-list {
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.3rem;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  background: #020617;
+  color: #9ca3af;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header.hero {
+    padding: 1.5rem 5%;
+  }
+  .nav-links {
+    gap: 0.6rem;
+    font-size: 0.8rem;
+  }
+  .hero-content {
+    margin-top: 3rem;
+    max-width: 100%;
+  }
+  .ask-widget {
+    position: static;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+}
